@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  top: 0;
+
+  z-index: 2;
+
+  @include d-flex(center, space-between);
+
+  width: 100%;
+
+  &__nav {
+    display: flex;
+
+    &__list {
+      display: flex;
+
+      &__item {
+        margin: 0 1.5rem;
+
+        &__link {
+          text-decoration: none;
+          color: $white;
+          @include text($regular, 1rem, $alata);
+        }
+      }
+    }
+  }
+}

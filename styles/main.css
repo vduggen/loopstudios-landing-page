@@ -1,0 +1,114 @@
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav__list {
+  display: flex;
+}
+.header__nav__list__item {
+  margin: 0 1.5rem;
+}
+.header__nav__list__item__link {
+  text-decoration: none;
+  color: white;
+  font: 400 1rem "Alata";
+}
+
+.hero {
+  height: 100vh;
+  padding: 4rem 0;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0005;
+  z-index: 2;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.hero > .wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  flex-direction: row;
+}
+.hero > .wrapper .box {
+  border: 2px solid white;
+  width: 58%;
+  padding: 3rem;
+  margin-top: 6rem;
+  z-index: 2;
+}
+.hero > .wrapper .box__title {
+  font: 300 5rem "Josefin Sans";
+  color: white;
+  text-transform: uppercase;
+}
+
+.about {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.about__image {
+  margin-right: auto;
+  width: 780px;
+}
+.about__dir {
+  background-color: white;
+  padding: 7rem;
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  width: 53%;
+}
+.about__dir__title {
+  font: 400 3rem "Josefin Sans";
+  text-transform: uppercase;
+}
+.about__dir__paragraph {
+  font: 300 1rem "Alata";
+  margin-top: 2rem;
+  line-height: 1.8;
+  color: #8c8c8c;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+}
+html .wrapper,
+body .wrapper {
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
